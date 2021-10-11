@@ -13,7 +13,7 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/admin', userEntry, (req,res) => {
-    res.send('Hola admin ' + req.query.user)
+    res.send('Hola admin: ' + req.query.user)
 })
 
 module.exports = router;
